@@ -13,7 +13,7 @@ $.get("/backend/api/getProfile.php", { token }, function (data) {
 }, "json");
 
 $("#updateBtn").click(function () {
-  $.post("../backend/api/updateProfile.php", {
+  $.post("/backend/api/updateProfile.php", {
     token: token,
     age: $("#age").val(),
     dob: $("#dob").val(),
