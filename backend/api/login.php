@@ -8,9 +8,9 @@ header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 header("Pragma: no-cache");
 header("Expires: 0");
 
-require "../config/db.php";
-require "../config/redis.php";
-require "../config/mongo.php";
+require __DIR__ . "/../config/db.php";
+require __DIR__ . "/../config/redis.php";
+require __DIR__ . "/../config/mongo.php";
 
 
 $email = $_POST['email'] ?? '';

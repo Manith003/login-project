@@ -1,6 +1,7 @@
 <?php
-require "../config/db.php";
-require "../config/redis.php";
+require __DIR__ . "/../config/db.php";
+require __DIR__ . "/../config/redis.php";
+
 
 $token = $_GET['token'];
 $userId = $redis->get("session:$token");

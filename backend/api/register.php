@@ -1,5 +1,6 @@
 <?php
-require "../config/db.php";
+require __DIR__ . "/../config/db.php";
+
 
 $stmt = $pdo->prepare(
   "INSERT INTO users (name, email, password) VALUES (?, ?, ?)"
