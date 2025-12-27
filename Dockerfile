@@ -21,4 +21,4 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader
 
 EXPOSE 10000
-CMD ["php", "-S", "0.0.0.0:10000", "-t", "frontend/public"]
+CMD ["php", "-S", "0.0.0.0:10000", "-t", "frontend/public", "frontend/public/backend.php"]
