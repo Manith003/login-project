@@ -7,9 +7,8 @@ RUN apt-get update && apt-get install -y \
     libcurl4-openssl-dev \
     pkg-config \
     libzip-dev \
-    && docker-php-ext-install mysqli
+    && docker-php-ext-install mysqli pdo_mysql
 
-# 🔥 IMPORTANT FIX HERE
 RUN pecl install mongodb-1.21.1 redis \
     && docker-php-ext-enable mongodb redis
 
