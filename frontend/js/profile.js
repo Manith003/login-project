@@ -4,7 +4,7 @@ if (!token) {
   window.location = "login.html";
 }
 
-$.get("../backend/api/getProfile.php", { token }, function (data) {
+$.get("/backend/api/getProfile.php", { token }, function (data) {
   if (data) {
     $("#age").val(data.age);
     $("#dob").val(data.dob);

@@ -1,6 +1,6 @@
 $("#registerBtn").click(function () {
   $.ajax({
-    url: "../backend/api/register.php",
+    url: "/backend/api/register.php",
     type: "POST",
     data: {
       name: $("#name").val(),

@@ -1,4 +1,7 @@
 <?php
 $redis = new Redis();
-$redis->connect("10.202.43.40", 6379);
-?>
+$redis->connect(
+    $_ENV['REDIS_HOST'],
+    $_ENV['REDIS_PORT']
+);
+$redis->auth($_ENV['REDIS_PASS']);

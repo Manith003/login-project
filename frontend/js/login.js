@@ -1,6 +1,6 @@
 $("#loginBtn").click(function () {
   $.ajax({
-    url: "../backend/api/login.php",
+    url: "/backend/api/login.php",
     type: "POST",
     dataType: "json",
     cache: false,
