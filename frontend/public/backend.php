@@ -1,9 +1,7 @@
 <?php
+$path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-$path = $_SERVER['REQUEST_URI'];
-
-$path = strtok($path, '?');
-
+// Handle backend API routes
 if (str_starts_with($path, '/backend/api/')) {
     $file = __DIR__ . '/../..' . $path;
 
@@ -11,7 +9,10 @@ if (str_starts_with($path, '/backend/api/')) {
         require $file;
         exit;
     }
+
+    http_response_code(404);
+    echo "API Not Found";
+    exit;
 }
 
-http_response_code(404);
-echo "Not Found";
+return false;
