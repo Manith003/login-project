@@ -28,6 +28,20 @@ This project demonstrates real-world backend concepts such as secure authenticat
 
 ---
 
+## 🧰 Tools Used
+
+- **VS Code** – Code editor  
+- **Git & GitHub** – Version control  
+- **Composer** – PHP dependency management  
+- **Docker CLI** – Containerization  
+- **Render Dashboard** – Cloud deployment  
+- **phpMyAdmin** – MySQL database management  
+- **Redis Cloud** – Session storage  
+- **MongoDB Atlas** – Login activity logging  
+- **Browser DevTools** – Debugging & testing  
+
+---
+
 ## 🗂 Project Structure
 
 ```
