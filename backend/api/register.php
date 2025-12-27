@@ -16,3 +16,7 @@ $stmt->execute([
   $_POST['email'],
   password_hash($_POST['password'], PASSWORD_BCRYPT)
 ]);
+
+echo json_encode(["status" => "success"]);
+exit;
+?>
